@@ -10,8 +10,7 @@
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
 #          summarizes how well the CNN performed on the image classification
-#          task. The true identity of the pet or object is indicated by the
-#          image filename. This program compares three CNN architectures:
+#          task. This program compares three CNN architectures:
 #          AlexNet, VGG, and ResNet.
 
 # Example command:
@@ -44,8 +43,7 @@ def main():
     check_command_line_arguments(in_arg)
 
     # TODO 2: Create pet image labels.
-    # Replace None with in_arg.dir after implementing get_pet_labels().
-    results = get_pet_labels(None)
+    results = get_pet_labels(in_arg.dir)
 
     # Check the generated pet image labels.
     check_creating_pet_image_labels(results)
