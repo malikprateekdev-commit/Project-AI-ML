@@ -55,8 +55,7 @@ def main():
     check_classifying_images(results)
 
     # TODO 4: Determine whether each label represents a dog.
-    # Replace None with in_arg.dogfile.
-    adjust_results4_isadog(results, None)
+    adjust_results4_isadog(results, in_arg.dogfile)
 
     # Check dog versus non-dog classifications.
     check_classifying_labels_as_dogs(results)
