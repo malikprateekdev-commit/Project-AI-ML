@@ -66,9 +66,8 @@ def main():
     # Check the calculated statistics.
     check_calculating_results(results, results_stats)
 
-    # TODO 6: Print the final results.
-    # Replace None with in_arg.arch.
-    print_results(results, results_stats, None, True, True)
+    # TODO 6: Print the final results and misclassifications.
+    print_results(results, results_stats, in_arg.arch, True, True)
 
     # TODO 0: Record the program ending time.
     end_time = time()
