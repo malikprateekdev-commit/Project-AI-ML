@@ -49,8 +49,7 @@ def main():
     check_creating_pet_image_labels(results)
 
     # TODO 3: Classify images and compare labels.
-    # Replace the first None with in_arg.dir and the second with in_arg.arch.
-    classify_images(None, results, None)
+    classify_images(in_arg.dir, results, in_arg.arch)
 
     # Check classification results.
     check_classifying_images(results)
